@@ -1,0 +1,98 @@
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+div.wrapper {
+  width: 250%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: -100%;
+}
+
+div.page {
+  width: 20%;
+  height: 100vh;
+  position: relative;
+}
+
+div.page.intro {
+  background-color: #fc0;
+}
+
+div.page.about {
+  background-color: #cfc;
+}
+
+div.page.plist {
+  background-color: #fcc;
+}
+
+div.page button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+}
+
+div.page nav {
+  width: 200px;
+  height: 40px;
+  background-color: #999;
+}
+
+div.page.preview {
+  width: 40%;
+}
+
+div.page.preview .sumGroup {
+  position: relative;
+}
+
+div.page.preview .sumGroup .summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+div.page.preview .sumGroup .summary .sumImg {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  background-color: #ccc;
+}
+
+div.page.preview .sumGroup .summary .content {
+  width: 50%;
+  height: 100vh;
+  background-color: #eee;
+}
+
+div.content {
+  overflow-y: auto;
+  padding: 40px;
+}
+
+div.content::-webkit-scrollbar {
+  width: 5px;
+}
+
+div.content::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+div.content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+div.content header {
+  height: 2400px;
+}

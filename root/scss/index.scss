@@ -1,0 +1,73 @@
+// index.scss
+body{
+    // overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+div.wrapper{
+    //block - w:auto(최대너비 - 부모영향), h:auto(최소높이 - 자식영향)
+    width: 250%;
+    display: flex;
+    position: relative;
+    left: -100%;
+}
+div.page{
+    width: 20%;
+    height: 100vh;
+    position: relative;
+    &.intro{background-color: #fc0;}
+    &.about{background-color: #cfc;}
+    &.plist{background-color: #fcc;}
+    button{
+        width: 80px; height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        margin: auto;
+        top: 0; bottom: 0;
+        left: 40px;
+    }
+    nav{
+        width: 200px; height: 40px;
+        background-color: #999;
+    }
+}
+div.page.preview{
+    width: 40%;
+    .sumGroup{
+        position: relative;
+        .summary{
+            display: flex;
+            height: 100%;
+            .sumImg{
+                position: relative;
+                width: 50%;
+                height: 100vh;
+                background-color: #ccc;
+            }
+            .content{
+                width: 50%;
+                height: 100vh;
+                background-color: #eee;
+            }
+        }
+    }
+}
+div.content{
+    overflow-y: auto;
+    padding: 40px;
+    &::-webkit-scrollbar{
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: rgba(0,0,0,0.1);
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: rgba(255,255,255,0.5);
+        border-radius: 5px;
+    }
+    header{
+        height: 2400px;
+    }
+    section{}
+    nav{}
+}
